@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/globals.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <title>Digitalers - Prompt Engineering</title>
+</head>
+
+<body>
+    <header>
+        <h1>Resumen: Prompt Engineering</h1>
+        <p>Una guía para principiantes sobre cómo escribir prompts efectivos.</p>
+    </header>
+
+    <main>
+        <section aria-labelledby="specific-heading">
+            <h2 id="specific-heading">Sé específico, usa términos técnicos y aporta contexto</h2>
+
+            <article>
+                <h3>Centrar Elementos</h3>
+                <p class="bad-practice">
+                    <span aria-hidden="true">❌</span> <span class="sr-only">Evita preguntar:</span>
+                    <q>¿Cómo centro algo?</q>
+                </p>
+                <p class="good-practice">
+                    <span aria-hidden="true">✅</span> <span class="sr-only">En su lugar, pregunta:</span>
+                    <q>¿Cuál es la mejor manera de centrar un elemento div horizontal y verticalmente en una página
+                        web utilizando CSS moderno?</q>
+                </p>
+            </article>
+
+            <article>
+                <h3>Explicar Conceptos</h3>
+                <p class="bad-practice">
+                    <span aria-hidden="true">❌</span> <span class="sr-only">Evita preguntar:</span>
+                    <q>Explica flexbox</q>
+                </p>
+                <p class="good-practice">
+                    <span aria-hidden="true">✅</span> <span class="sr-only">Especifica el lenguaje/tecnología y pide
+                        ejemplos:</span>
+                    <q>Explica el concepto <code>flexbox</code> de CSS e incluye dos ejemplos de código.</q>
+                </p>
+                <p class="good-practice">
+                    <span aria-hidden="true">✅</span> <span class="sr-only">Incluye contexto adicional como la audiencia
+                        y el estado del proyecto:</span>
+                    <q>Explícame el concepto <code>flexbox</code> de CSS como si fuera un desarrollador
+                        principiante que recién está aprendiendo. Proporciona un ejemplo de cómo puedo usar
+                        <code>flexbox</code> para alinear los elementos de una barra de navegación (navbar).</q>
+                </p>
+            </article>
+
+            <article>
+                <h3>Crear Elementos</h3>
+                <p class="bad-practice">
+                    <span aria-hidden="true">❌</span> <span class="sr-only">Evita preguntar:</span>
+                    <q>¿Cómo creo un formulario?</q>
+                </p>
+                <p class="good-practice">
+                    <span aria-hidden="true">✅</span> <span class="sr-only">En su lugar, pregunta:</span>
+                    <q>Crea la estructura HTML semántica y el CSS para un formulario de contacto accesible, que incluya
+                        etiquetas (labels) conectadas a sus campos para nombre, correo electrónico y un botón de
+                        envío.</q>
+                </p>
+            </article>
+
+            <article>
+                <h3>Ejemplos de Componentes de Interfaz</h3>
+                <p class="bad-practice">
+                    <span aria-hidden="true">❌</span> <span class="sr-only">Evita preguntar:</span>
+                    <q>Muéstrame un ejemplo de una tarjeta</q>
+                </p>
+                <p class="good-practice">
+                    <span aria-hidden="true">✅</span> <span class="sr-only">En su lugar, pregunta:</span>
+                    <q>Por favor, crea el HTML y CSS de una tarjeta de perfil de usuario (User Profile Card). El diseño
+                        debe incluir una imagen circular, un nombre en negrita, la profesión debajo y un botón de
+                        "Contactar". Asegúrate de usar CSS Grid para la distribución interna y que sea responsivo.</q>
+                </p>
+            </article>
+        </section>
+
+        <hr aria-hidden="true">
+
+        <section aria-labelledby="formatting-heading">
+            <h2 id="formatting-heading">Controlar la longitud y el formato de las respuestas</h2>
+            <ul>
+                <li>
+                    <span aria-hidden="true">✅</span> <span class="sr-only">Buena práctica:</span>
+                    <strong>Pedir pasos:</strong> <q>Proporciona una breve explicación de 3 pasos sobre cómo importar y
+                        aplicar Google Fonts en una hoja de estilos CSS externa.</q>
+                </li>
+                <li>
+                    <span aria-hidden="true">✅</span> <span class="sr-only">Buena práctica:</span>
+                    <strong>Información en formato de tabla:</strong> <q>Destaca las diferencias de uso principal entre
+                        CSS Grid y CSS Flexbox en un formato de tabla claro.</q>
+                </li>
+                <li>
+                    <span aria-hidden="true">✅</span> <span class="sr-only">Buena práctica:</span>
+                    <strong>Resumir con viñetas:</strong> <q>Por favor, resume en 3 viñetas por qué es importante
+                        utilizar etiquetas HTML semánticas como <code>&lt;main&gt;</code> y <code>&lt;article&gt;</code>
+                        en lugar de agrupar todo en etiquetas <code>&lt;div&gt;</code>.</q>
+                </li>
+                <li>
+                    <span aria-hidden="true">✅</span> <span class="sr-only">Buena práctica:</span>
+                    <strong>Pedir los conceptos más importantes:</strong> <q>Enumera los 5 conceptos más importantes de
+                        CSS que un maquetador principiante debe dominar antes de intentar traducir un diseño de Figma a
+                        código web.</q>
+                </li>
+                <li>
+                    <span aria-hidden="true">✅</span> <span class="sr-only">Buena práctica:</span>
+                    <strong>Resumir como diagrama de flujo:</strong> <q>Usa un diagrama de flujo simple para explicar en
+                        qué orden aplica el navegador los estilos CSS según el modelo de cascada.</q>
+                </li>
+                <li>
+                    <span aria-hidden="true">✅</span> <span class="sr-only">Buena práctica:</span>
+                    <strong>Resumir como pseudocódigo/esquema:</strong> <q>Crea un esquema en forma de comentarios HTML
+                        describiendo cómo debo estructurar visualmente el <code>&lt;header&gt;</code>,
+                        <code>&lt;main&gt;</code> y <code>&lt;footer&gt;</code> de una página de aterrizaje (landing
+                        page) típica.</q>
+                </li>
+                <li>
+                    <span aria-hidden="true">✅</span> <span class="sr-only">Buena práctica:</span>
+                    <strong>Pedir una analogía o metáfora:</strong> <q>Explica el concepto de Especificidad
+                        (Specificity) en las clases y selectores de CSS usando una analogía sencilla.</q>
+                </li>
+            </ul>
+        </section>
+
+        <hr aria-hidden="true">
+
+        <section aria-labelledby="break-tasks-heading">
+            <h2 id="break-tasks-heading">Dividir tareas en pasos más pequeños</h2>
+
+            <p class="bad-practice">
+                <span aria-hidden="true">❌</span> <span class="sr-only">Evita:</span> Prompts muy largos con
+                muchas instrucciones visuales al mismo tiempo:
+            </p>
+            <blockquote>
+                <p>Ayúdame a maquetar todo mi sitio web de portafolio. Debe tener una barra de navegación fija en la
+                    parte superior, una sección hero con una imagen de fondo oscurecida y un texto centrado. Debajo de
+                    eso, necesito una grilla de 3 columnas para mostrar mis proyectos, donde cada tarjeta se eleve al
+                    pasar el mouse, y al final un pie de página negro con íconos sociales blancos que giren...</p>
+            </blockquote>
+
+            <p class="good-practice">
+                <span aria-hidden="true">✅</span> <span class="sr-only">Haz lo siguiente:</span> Dividir el proyecto de
+                maquetación en subtareas lógicas, usando listas numeradas:
+            </p>
+            <blockquote>
+                <p>Ayúdame a construir la estructura y el diseño de mi portafolio web. Vamos a hacerlo paso a paso. Para
+                    empezar, asegúrate de cumplir con estos requisitos iniciales:</p>
+                <ol>
+                    <li>Genera el marcado HTML semántico únicamente para la barra de navegación (header) y la sección
+                        principal de bienvenida (hero).</li>
+                    <li>Proporciona el CSS necesario para que la barra de navegación use Flexbox para espaciar el
+                        logotipo a la izquierda y los enlaces a la derecha.</li>
+                </ol>
+            </blockquote>
+        </section>
+
+        <hr aria-hidden="true">
+
+        <section aria-labelledby="optimize-heading">
+            <h2 id="optimize-heading">Optimizar Prompts</h2>
+            <ol>
+                <li>
+                    <strong>Pedir a ChatGPT que haga preguntas aclaratorias sobre un prompt amplio:</strong>
+                    <blockquote>
+                        <p>Voy a darte un prompt y quiero que me hagas preguntas aclaratorias para ayudarme a
+                            optimizarlo. Luego, sugiéreme un prompt más efectivo basado en mis respuestas. El prompt
+                            inicial es: "Por favor, dame el código HTML y CSS para hacer un menú de navegación
+                            responsivo (tipo hamburguesa) para móviles."</p>
+                    </blockquote>
+                </li>
+                <li>Responde las preguntas aclaratorias de ChatGPT.</li>
+                <li>Cuando ChatGPT devuelva un prompt optimizado, vuelve a ingresarlo a ChatGPT.</li>
+                <li>¡Éxito!</li>
+            </ol>
+        </section>
+
+        <hr aria-hidden="true">
+
+        <section aria-labelledby="role-base-heading">
+            <h2 id="role-base-heading">Prompts basados en roles</h2>
+            <p><span aria-hidden="true">✅</span> <span class="sr-only">Buena práctica:</span> <strong>Actúa como
+                    un...</strong></p>
+            <ul>
+                <li>...<strong>diseñador UI/UX experto</strong> y ayúdame a definir una paleta de colores coherente y
+                    contrastante para mi página.</li>
+                <li>...<strong>desarrollador Front End senior</strong> y recomiéndame la mejor forma de organizar mis
+                    archivos de estilos CSS.</li>
+                <li>...<strong>especialista en accesibilidad web</strong> y revisa mi código HTML para asegurar que los
+                    lectores de pantalla puedan interpretarlo correctamente.</li>
+            </ul>
+        </section>
+
+        <hr aria-hidden="true">
+
+        <section aria-labelledby="examples-heading">
+            <h2 id="examples-heading">Prompts con Ejemplos</h2>
+
+            <article>
+                <span aria-hidden="true">✅</span> <span class="sr-only">Buena práctica:</span>
+                <blockquote>
+                    <p>Por favor, escribe una regla CSS para crear un botón moderno con una sombra sutil (box-shadow) y
+                        bordes redondeados, utilizando los siguientes valores como guía visual:</p>
+                    <p>
+                        <strong>Color de fondo:</strong> <code>#087ea4</code><br>
+                        <strong>Radio del borde:</strong> <code>8px</code><br>
+                        <strong>Desplazamiento de la sombra:</strong>
+                        <code>4px hacia abajo, color negro con 20% de opacidad</code>
+                    </p>
+                </blockquote>
+            </article>
+
+            <article>
+                <span aria-hidden="true">✅</span> <span class="sr-only">Buena práctica:</span>
+                <blockquote>
+                    <p>Por favor, genera la estructura HTML para una lista de proyectos de diseño. Utiliza la etiqueta
+                        <code>&lt;ul&gt;</code> y <code>&lt;li&gt;</code>. Cada ítem de la lista debe estar envuelto en
+                        una etiqueta <code>&lt;article&gt;</code> e incluir la siguiente información etiquetada
+                        correctamente:
+                    </p>
+                    <ul>
+                        <li>Título del proyecto (como un h3)</li>
+                        <li>Breve descripción del trabajo (como un párrafo)</li>
+                        <li>Herramienta utilizada (por ejemplo: Figma, Illustrator)</li>
+                        <li>Enlace al prototipo interactivo</li>
+                    </ul>
+                </blockquote>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p><small>Recopilado con fines educativos en desarrollo web e ingeniería de prompts.</small></p>
+    </footer>
+</body>
+
+</html>
