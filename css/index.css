@@ -8,14 +8,13 @@ header {
 
     .header-title-wrapper {
         display: flex;
-        align-items: center;
+        flex-direction: column;
         gap: var(--spacing-md);
         margin-bottom: var(--spacing-xs);
     }
 
     .header-logo {
-        height: 48px;
-        width: auto;
+        width: 150px;
     }
 
     h1 {
